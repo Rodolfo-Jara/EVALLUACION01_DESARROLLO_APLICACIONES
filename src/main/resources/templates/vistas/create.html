@@ -10,24 +10,20 @@
 </head>
 
 <body>
-<div th:include="vistas/menu.html::header">
+<div 
+th:include="vistas/menu.html::header">
 	
 </div>
 
 
-<!-- Page Content -->
+
 <div class="container">
 
-
-  <!-- Page Heading/Breadcrumbs -->
-  <h1 class="mt-4 mb-3">
-    <small>Registrar Productos</small>
-  </h1>
 
 
 
   <h2>Crear Producto</h2>
-  <form class="form-horizontal" action="#" method="post" enctype="multipart/form-data">
+  <form class="form-horizontal" th:action="@{/productos/save}" method="post" enctype="multipart/form-data">
     <div class="form-group">
       <label class="control-label col-sm-2" for="nombre">Nombre:</label>
       <div class="col-sm-10">
@@ -75,12 +71,8 @@
         </button>
       </div>
     </div>
-
   </form>
-
 </div>
-<!-- /.container -->
-
 
 </body>
 

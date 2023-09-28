@@ -23,8 +23,7 @@ public class Producto {
     private double precio;
     private int cantidad;
     
-    @ManyToOne
-    private Usuario usuario;
+    
     
 	public Producto() {
 
@@ -32,15 +31,23 @@ public class Producto {
 
 	
 
-	public Producto(Integer id, String nombre, String imagen, String descripcion, double precio, int cantidad, Usuario usuario) {
-		super();this.id = id;
+	
+
+
+
+	public Producto(Integer id, String nombre, String imagen, String descripcion, double precio, int cantidad) {
+		super();
+		this.id = id;
 		this.nombre = nombre;
 		this.imagen = imagen;
 		this.descripcion = descripcion;
 		this.precio = precio;
 		this.cantidad = cantidad;
-		this.usuario = usuario;
 	}
+
+
+
+
 
 
 
@@ -116,23 +123,11 @@ public class Producto {
 
 
 
-	public Usuario getUsuario() {
-		return usuario;
-	}
 
 
 
-	public void setUsuario(Usuario usuario) {
-		this.usuario = usuario;
-	}
 
 
-
-	@Override
-	public String toString() {
-		return "Producto [id=" + id + ", nombre=" + nombre + ", imagen=" + imagen + ", descripcion=" + descripcion
-				+ ", precio=" + precio + ", cantidad=" + cantidad + "]";
-	}
 	
     
 }

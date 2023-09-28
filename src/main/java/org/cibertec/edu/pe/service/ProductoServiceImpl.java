@@ -14,6 +14,7 @@ public class ProductoServiceImpl implements ProductoService {
 	@Autowired
 	private IProducto data;
 	
+	
 	@Override
 	public Producto save(Producto producto) {
 		// TODO Auto-generated method stub
@@ -41,7 +42,7 @@ public class ProductoServiceImpl implements ProductoService {
 	@Override
 	public List<Producto> findAll() {
 		// TODO Auto-generated method stub
-		return null;
+		return data.findAll();
 	}
 
 }
