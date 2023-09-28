@@ -14,6 +14,6 @@ public class CarritoController {
 		
 
 
-		return "templates/Index";
+		return "vistas/index";
 	}
 }
